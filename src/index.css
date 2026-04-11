@@ -193,3 +193,62 @@ body{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* --- Mobile Responsive (Phones) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Change the Section Layout */
+    .Main-Container {
+        flex-direction: column; /* Stacks text and image vertically */
+        gap: 30px;
+        padding: 20px;
+        height: auto;           /* Let content define the height */
+    }
+
+    /* 2. Fix the Text Container */
+    .Text-Container {
+        position: relative;     /* Removes the 'absolute' positioning from desktop */
+        left: 0;                /* Resets the 10% left margin */
+        width: 90%;             /* Fits the phone screen */
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    /* 3. Resize the Image */
+    .Main-Picture {
+        height: 350px;          /* Shrink her so she fits on a phone screen */
+        width: auto;
+        margin-top: 20px;
+    }
+
+    /* 4. Adjust the Navigation Pill */
+    header {
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .Header {
+        font-size: 14px;        /* Smaller text for smaller screens */
+        padding: 0 10px;
+    }
+
+    /* 5. Resize the Icon Slider */
+    .Icon-Slider {
+        width: 95%;             /* Make it wider on mobile */
+    }
+    
+    .Mini-Icon {
+        width: 50px;            /* Smaller icons for mobile */
+        height: 50px;
+    }
+}
