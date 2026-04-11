@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+}
+.Icon{
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #c9c9cc; /* Light violet/lavender color from your image */
+    padding-right: 100px;
+   
+}
+
+.Section-Wrapper {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    pointer-events: auto; /* Re-enables clicks for the links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between Home, About Me, and Projects */
+    
+    background-color: rgba(26, 21, 46, 0.8); /* Dark violet with transparency */
+    backdrop-filter: blur(15px);             /* Glassmorphism blur effect */
+    padding-left: 20px;
+    padding: 10px 40px;
+    border: 1.5px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
+    border-radius: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);   /* Depth shadow */
+}
+
+.Header-div {
+    position: fixed;
+    top: 0;
+     /* Ensures it starts from the edge */
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; /* Adjust this for how far from the top it floats */
+    pointer-events: none; /* Allows clicks to pass through the empty space around the bar */
+}
+
+.Header{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c9c9cc; /* Light violet/lavender color from your image */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* Resetting these to let flexbox handle the layout */
+    width: 115px; 
+    margin: 0;
+}
+.Header:hover {
+    color: #bc13fe; /* Neon purple glow */
+    text-shadow: 0 0 10px rgba(188, 19, 254, 0.6);
+    transform: translateY(-2px); /* Slight lift */
+}
+
+
+.Main-Picture {  
+    margin-top: 100px;
+    display: block;
+    height: 780px;
+    width: auto;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color: #0d0b1a; 
+    background-image: url('./assets/Gemini_Generated_Image_.png');
+    background-size: cover;      
+    background-position: center; 
+    background-attachment: fixed; 
+    height: 110vh;
+    background-size: 110% 115%; 
+}
+
+.Main-Container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.Text-Container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    border: 2px black solid;
+    background-color: #2a1b3d;
+    color: #a29bfe;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;    
+    left: 10%;      
+    font-family: 'Arial';        
+
+    z-index: 10;           /* Keeps it on top of the background */
+}
+
+.Home-container {
+    height: 100px;
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 500px;
+    margin-left: 100px;
+    line-height: .90;
+}
+
+.Home-description {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: .20;
+}
+
+.Home-Button {
+    margin-left: -423px;
+    margin-top: 170px;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c9c9cc; /* Light violet/lavender color */
+    background-color: transparent;
+    border: 2px solid #c9c9cc; /* Border matching the text color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Home-Button:hover {
+    background-color: #c9c9cc; /* Light violet/lavender color on hover */
+    color: #0d0b1a; /* Dark background color for contrast */
+    border-color: #c9c9cc; /* Keep the border color the same */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.Icon-Slider {
+    width: 600px;        /* Adjust this width to show exactly 5 icons */
+    overflow: hidden;    /* Hides the icons outside the 5-icon window */
+    margin: 40px auto;
+    position: relative;
+    /* Optional: Fade effect on edges for 'Naked Eye' premium look */
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.Mini-Icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0; /* Prevents icons from squishing */
+    transition: transform 0.3s ease;
+}
+
+.Mini-Icon:hover {
+    transform: scale(1.2); /* Pop effect on hover */
+    filter: drop-shadow(0 0 10px #bc13fe);
+}
+
+.Icon-Track {
+    display: flex;
+    width: calc(100px * 24); /* (Icon width + gap) * total number of icons */
+    animation: scroll 20s linear infinite;
+    gap: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Move the track left by half its total width (one full set of icons) */
+        transform: translateX(calc(-100px * 12)); 
+    }
+}
+
