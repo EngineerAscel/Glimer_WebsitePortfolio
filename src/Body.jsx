@@ -43,7 +43,6 @@ function Body() {
                                 <li>React</li>
                                 <li>Node.js</li>
                                 <p></p>
-                                <li>R</li>
                                 <li>C++</li>
                                 <li>Java</li>
                                 <li>Python</li>
