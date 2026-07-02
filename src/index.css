@@ -1,188 +1,268 @@
 
 
+:root {
+    color-scheme: dark;
+    font-family: 'Arial', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
-.Icon{
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #c9c9cc; /* Light violet/lavender color from your image */
-    padding-right: 100px;
-   
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #0d0b1a;
+    background-image: radial-gradient(circle at top center, rgba(124, 57, 238, 0.20), transparent 26%), radial-gradient(circle at center, rgba(124, 81, 255, 0.14), transparent 42%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    color: #c9c9cc;
 }
 
 .Section-Wrapper {
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: transparent;
 }
 
-header{
-    pointer-events: auto; /* Re-enables clicks for the links */
+header {
+    pointer-events: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between Home, About Me, and Projects */
-    
-    background-color: rgba(26, 21, 46, 0.8); /* Dark violet with transparency */
-    backdrop-filter: blur(15px);             /* Glassmorphism blur effect */
-    padding-left: 20px;
-    padding: 10px 40px;
-    border: 1.5px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
-    border-radius: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);   /* Depth shadow */
+    gap: 16px;
+    background-color: rgba(26, 21, 46, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 32px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+    max-width: 1200px;
+    width: 100%;
 }
 
 .Header-div {
     position: fixed;
-    top: 0;
-     /* Ensures it starts from the edge */
+    top: 16px;
+    left: 0;
     width: 100%;
-    height: 70px;
     z-index: 1000;
     display: flex;
     justify-content: center;
-    padding-top: 40px; /* Adjust this for how far from the top it floats */
-    pointer-events: none; /* Allows clicks to pass through the empty space around the bar */
+    padding: 0 12px;
+    pointer-events: auto;
 }
 
-.Header{
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
+.Icon {
+    font-size: clamp(22px, 2vw, 30px);
     font-weight: bold;
-    color: #c9c9cc; /* Light violet/lavender color from your image */
+    color: #c9c9cc;
+    padding-right: 1.5rem;
+    margin: 0;
+}
+
+.Header {
+    font-size: clamp(14px, 1.1vw, 18px);
+    font-weight: bold;
+    color: #c9c9cc;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    /* Resetting these to let flexbox handle the layout */
-    width: 115px; 
-    margin: 0;
+    padding: 8px 12px;
+    border-radius: 999px;
 }
+
 .Header:hover {
-    color: #bc13fe; /* Neon purple glow */
+    color: #bc13fe;
     text-shadow: 0 0 10px rgba(188, 19, 254, 0.6);
-    transform: translateY(-2px); /* Slight lift */
+    transform: translateY(-2px);
 }
 
-
-.Main-Picture {  
-    margin-top: 100px;
-    display: block;
-    height: 780px;
-    width: auto;
-}
-
-body{
-    
-    margin: 0;
-    padding: 0;
-    background-color: #0d0b1a; 
-    background-image: url('./assets/Gemini_Generated_Image_.png');
-    background-size: cover;      
-    background-position: center; 
-    background-attachment: fixed; 
-    height: 110vh;
-    background-size: 110% 115%; 
-}
-
-.Main-Container{
+.Section-Wrapper {
+    min-height: 100vh;
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80vh;
-    margin-top: 50px;
-    position: relative;
 }
 
+.Main-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    margin-top: 80px;
+    padding: 0 24px 48px;
+    gap: 3rem;
+}
+
+.Home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: min(520px, 100%);
+}
+
+.Home-container {
+    color: rgb(255, 255, 255);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.05;
+    max-width: 100%;
+}
+
+.Home-description {
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.Home-Button {
+    width: min(220px, 100%);
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c9c9cc;
+    background-color: transparent;
+    border: 2px solid #c9c9cc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.Home-Button:hover {
+    background-color: #c9c9cc;
+    color: #0d0b1a;
+    border-color: #c9c9cc;
+    transform: translateY(-2px);
+}
+
+.Main-Picture {
+    display: block;
+    width: min(520px, 100%);
+    height: auto;
+    max-height: 700px;
+    margin-top: 0;
+    object-fit: contain;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
 
 .Text-Container {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 550px;
-    border: 2px black solid;
-    background-color: #2a1b3d;
-    color: #a29bfe;
+    width: min(620px, 100%);
+    max-width: 620px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background-color: rgba(39, 23, 60, 0.95);
+    color: #e3dfff;
+    border-radius: 24px;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    left: auto;
+    z-index: 10;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.24);
+}
+
+.Text-Container h1 {
+    margin-top: 0;
+    font-size: clamp(1.65rem, 2.2vw, 2.1rem);
+    letter-spacing: 0.02em;
+    color: #f3ebff;
+}
+
+.Skill-Section {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.Skill-Section h2 {
+    margin: 0;
+    font-size: clamp(1.35rem, 1.8vw, 1.6rem);
+    color: #e7deff;
+}
+
+.Skill-Columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 1.2rem 1.8rem;
+    margin: 0;
+}
+
+.Skill-Block {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
-    padding: 20px;
-    position: absolute;    
-    left: 10%;      
-    font-family: 'Arial';        
-
-    z-index: 10;           /* Keeps it on top of the background */
+    padding: 18px;
+    min-height: 180px;
+    display: grid;
+    align-content: start;
 }
 
-.Home-container {
-    height: 100px;
-    width: auto;
-    color: rgb(255, 255, 255);
-    font-family: Arial;
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 500px;
-    margin-left: 100px;
-    line-height: .90;
+.Skill-Block ul {
+    margin: 0;
+    padding-left: 1.2rem;
 }
 
-.Home-description {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    line-height: .20;
+.Skill-Block li {
+    margin-bottom: 0.55rem;
+    font-size: clamp(0.95rem, 1vw, 1.05rem);
+    line-height: 1.7;
+    color: #f0ecff;
 }
 
-.Home-Button {
-    margin-left: -423px;
-    margin-top: 170px;
-    width: 200px;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #c9c9cc; /* Light violet/lavender color */
-    background-color: transparent;
-    border: 2px solid #c9c9cc; /* Border matching the text color */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.Skill-Columns ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style: disc;
 }
 
-.Home-Button:hover {
-    background-color: #c9c9cc; /* Light violet/lavender color on hover */
-    color: #0d0b1a; /* Dark background color for contrast */
-    border-color: #c9c9cc; /* Keep the border color the same */
-    transform: translateY(-2px); /* Slight lift on hover */
+.Skill-Columns li {
+    margin-bottom: 0.55rem;
+    font-size: clamp(0.95rem, 1vw, 1.05rem);
+    line-height: 1.8;
+    color: #e9e1ff;
 }
 
 .Icon-Slider {
-    width: 600px;        /* Adjust this width to show exactly 5 icons */
-    overflow: hidden;    /* Hides the icons outside the 5-icon window */
+    width: min(100%, 900px);
+    overflow: hidden;
     margin: 40px auto;
     position: relative;
-    /* Optional: Fade effect on edges for 'Naked Eye' premium look */
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.Icon-Track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 24s linear infinite;
 }
 
 .Mini-Icon {
     width: 80px;
     height: 80px;
-    flex-shrink: 0; /* Prevents icons from squishing */
+    flex-shrink: 0;
     transition: transform 0.3s ease;
 }
 
 .Mini-Icon:hover {
-    transform: scale(1.2); /* Pop effect on hover */
+    transform: scale(1.2);
     filter: drop-shadow(0 0 10px #bc13fe);
-}
-
-.Icon-Track {
-    display: flex;
-    width: calc(100px * 24); /* (Icon width + gap) * total number of icons */
-    animation: scroll 20s linear infinite;
-    gap: 20px;
 }
 
 @keyframes scroll {
@@ -190,37 +270,211 @@ body{
         transform: translateX(0);
     }
     100% {
-        /* Move the track left by half its total width (one full set of icons) */
-        transform: translateX(calc(-100px * 12)); 
+        transform: translateX(-50%);
     }
 }
-/* Keeps the section layout structured but elements aligned left */
+
 .Project-Section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligns "My Projects" and cards to the left side */
-    justify-content: flex-start; /* Pulls content toward the top */
-    padding: 100px 5%; /* 10% side padding keeps it beautifully inset from the screen edges */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 5% 120px;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Individual project layout */
+.Project-Section h1 {
+    margin: 0 0 32px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    color: #bc13fe;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    letter-spacing: 0.02em;
+}
+
+.Project-Section .Project-Card {
+    margin-top: 0;
+}
+
 .Project-Card {
+    width: 100%;
+    max-width: 720px;
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Left-aligns heading, video container, and link text */
+    align-items: flex-start;
+    background: rgba(19, 10, 44, 0.9);
+    border-radius: 24px;
+    border: 1px solid rgba(188, 19, 254, 0.18);
+    padding: 28px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+}
+
+.Project-Card h2 {
+    margin: 0 0 18px;
+    font-size: clamp(1.6rem, 2.2vw, 2rem);
+    color: #f7f1ff;
+}
+
+.Project-Card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    max-width: 560px; /* Gives the video an optimal maximum desktop sizing */
+    max-width: 560px;
     margin-top: 30px;
 }
 
-/* Video Wrapper */
 .Video-Container {
     position: relative;
     width: 100%;
-    margin: 15px 0; /* Ensures uniform vertical spacing without auto-centering */
+    margin: 15px 0;
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid #bc13fe; /* Replaces frameBorder HTML setting with a sleek colored border */
+    border: 2px solid #bc13fe;
+}
+
+.Video-Container iframe {
+    width: 100%;
+    min-height: 240px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
+
+@media (max-width: 980px) {
+    .Main-Container {
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: auto;
+        margin-top: 120px;
+        gap: 2rem;
+    }
+
+    .Header-div {
+        top: 12px;
+    }
+
+    .Home-container {
+        font-size: clamp(2.2rem, 5vw, 3.4rem);
+    }
+
+    .Text-Container {
+        width: min(680px, 100%);
+        padding: 28px;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 10px 16px;
+        gap: 10px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+        background-color: rgba(13, 11, 26, 0.92);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        width: 100%;
+        max-width: none;
+    }
+
+    .Header-div {
+        top: 0;
+        padding: 0 10px;
+    }
+
+    .Header {
+        font-size: 13px;
+        padding: 8px 10px;
+        min-width: 0;
+        white-space: nowrap;
+    }
+
+    .Icon {
+        font-size: 18px;
+        padding-right: 0.8rem;
+    }
+
+    .Main-Container {
+        padding: 120px 16px 38px;
+    }
+
+    .Home-content,
+    .Text-Container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Text-Container {
+        padding: 24px 20px;
+    }
+
+    .Text-Container h1 {
+        font-size: 1.6rem;
+    }
+
+    .Text-Container ul {
+        font-size: 0.95rem;
+    }
+
+    .Icon-Slider {
+        width: 100%;
+    }
+
+    .Project-Section {
+        padding: 60px 4%;
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        justify-content: space-between;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 0 0 14px 14px;
+        background-color: rgba(13, 11, 26, 0.96);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        width: 100%;
+        max-width: none;
+    }
+
+    .Header {
+        width: auto;
+        text-align: left;
+        font-size: 12px;
+        padding: 6px 8px;
+        min-width: 0;
+    }
+
+    .Header-div {
+        top: 0;
+        padding: 0 8px;
+    }
+
+    .Icon {
+        font-size: 18px;
+        padding-right: 0.8rem;
+    }
+
+    .Home-container {
+        font-size: 1.8rem;
+    }
+
+    .Home-Button {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .Icon-Track {
+        gap: 14px;
+    }
 }
