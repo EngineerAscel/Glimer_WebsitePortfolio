@@ -22,7 +22,7 @@ function Body() {
                             <div className="Home-container">
                                 <h2>Welcome to my website</h2>
                                 <p className="Home-description">Ascel Ray D. Glimer / 20</p>
-                                <p className="Home-description">3rd year Student of RTU</p>
+                                <p className="Home-description">4th year Student of RTU</p>
                                 <h2 className="Home-description">Aspiring Software Engineer</h2>
                             </div>
                             <a href="/Ascel_Ray_Glimer_CV.pdf" download="Glimer_CV.pdf">
@@ -66,16 +66,12 @@ function Body() {
                     <div className="WhoAmI-Panel WhoAmI-Details">
                         <div className="Work-Section">
                             <h2>Experience</h2>
-                            <div className="Work-Item">
-                                <span className="Work-Period">Feb 2026 - April 2026</span>
-                                <strong>PPI Holdings, INC.</strong>
-                                <p>Full Stack Web Developer</p>
-                            </div>
-                          
+                            
                             <div className="Work-Item">
                                 <span className="Work-Period">2025</span>
                                 <strong>168 FCC Formula Callcenter</strong>
                                 <p>Accounting Clerk</p>
+                                <p>Data Encoder</p>
                             </div>
                         </div>
                         <div className="Work-Section">
