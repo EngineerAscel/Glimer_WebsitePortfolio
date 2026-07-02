@@ -25,8 +25,9 @@ function Body() {
                     </div>
 
                  <div>
-                    <button className="Home-Button">Download CV</button>
-
+                    <a href="/Ascel_Ray_Glimer_CV.pdf" download="Glimer_CV.pdf">
+                        <button className="Home-Button">Download CV</button>
+                        </a>
                     </div>   
                     <img className="Main-Picture" src={profilePic} alt="Profile" />
                 </div>
@@ -95,11 +96,29 @@ function Body() {
                 
             </section>
 
-            {/* Section 3: Projects */}
-            <section id="projects" className="Section-Wrapper">
-                <h2 style={{color: '#bc13fe'}}>My Projects</h2>
-                {/* Add your project cards here later */}
-            </section>
+           {/* Section 3: Projects */}
+   <section id="projects" className="Section-Wrapper Project-Section">
+    <h1 style={{color: '#bc13fe'}}>My Projects</h1>
+    {/* Add your project cards here later */}
+
+    <div className="Project-Card">
+        <h2>1D GARAGE SYSTEM</h2>
+        
+        {/* YouTube Video Embed */}
+        <div className="Video-Container">
+            <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/xBex4Ri0KD8"
+                title="1D GARAGE SYSTEM Video Showcase"
+                frameBorder="10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+            ></iframe>
+        </div>
+        <p> <a href="https://www.youtube.com/embed/xBex4Ri0KD8" target="_blank">View on Youtube</a></p>
+    </div>
+</section>
         </>
     );
 }

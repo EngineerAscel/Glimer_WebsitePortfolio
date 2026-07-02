@@ -194,4 +194,33 @@ body{
         transform: translateX(calc(-100px * 12)); 
     }
 }
+/* Keeps the section layout structured but elements aligned left */
+.Project-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns "My Projects" and cards to the left side */
+    justify-content: flex-start; /* Pulls content toward the top */
+    padding: 100px 5%; /* 10% side padding keeps it beautifully inset from the screen edges */
+    width: 100%;
+    box-sizing: border-box;
+}
 
+/* Individual project layout */
+.Project-Card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-aligns heading, video container, and link text */
+    width: 100%;
+    max-width: 560px; /* Gives the video an optimal maximum desktop sizing */
+    margin-top: 30px;
+}
+
+/* Video Wrapper */
+.Video-Container {
+    position: relative;
+    width: 100%;
+    margin: 15px 0; /* Ensures uniform vertical spacing without auto-centering */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #bc13fe; /* Replaces frameBorder HTML setting with a sleek colored border */
+}
