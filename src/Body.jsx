@@ -17,26 +17,22 @@ function Body() {
             {/* Section 1: Home */}
             <section id="home" className="Section-Wrapper">
                 <div className="Main-Container">
-                    <div className="Hero-Panel">
-                        <div className="Home-content">
-                            <div className="Home-container">
-                                <h2>Welcome to my website</h2>
-                                <p className="Home-description">Ascel Ray D. Glimer / 20</p>
-                                <p className="Home-description">4th year Student of RTU</p>
-                                <h2 className="Home-description">Aspiring Software Engineer</h2>
-                            </div>
-                            <a href="/Ascel_Ray_Glimer_CV.pdf" download="Glimer_CV.pdf">
-                                <button className="Home-Button">Download CV</button>
-                            </a>
-                        </div>
+                    <div className="Home-container">
+                       <h2>Welcome to my website</h2>
+                          <p className = "Home-description">Ascel Ray D. Glimer / 20</p>
+                          <p className = "Home-description">3rd year Student of RTU</p>
+                          <h2 className = "Home-description">Aspiring Software Engineer</h2>
                     </div>
-                    <div className="Image-Card">
-                        <img className="Main-Picture" src={profilePic} alt="Profile" />
-                    </div>
+
+                 <div>
+                    <button className="Home-Button">Download CV</button>
+
+                    </div>   
+                    <img className="Main-Picture" src={profilePic} alt="Profile" />
                 </div>
             </section>
 
-            {/* Section 2: Who Am I */}
+                        {/* Section 2: Who Am I */}
             <section id="whoami" className="Section-Wrapper WhoAmI-Section">
                 <h1>Who Am I</h1>
                 <div className="WhoAmI-Grid">
@@ -99,83 +95,88 @@ function Body() {
                 </div>
             </section>
 
-            {/* Section 3: About Me */}
+            {/* Section 2: About Me */}
+
+            
             <section id="about" className="Section-Wrapper">
-                <div className="Text-Container">
-                    <div className="Skill-Section">
-                        <h1>Tech Stack Familiar With:</h1>
-                        <div className="Skill-Columns">
-                            <div className="Skill-Block">
-                                <ul>
-                                    <li>Html</li>
-                                    <li>Css</li>
-                                    <li>JavaScript</li>
-                                    <li>React</li>
-                                    <li>Node.js</li>
-                                </ul>
-                            </div>
-                            <div className="Skill-Block">
-                                <ul>
-                                    <li>C++</li>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>Php</li>
-                                    <li>SupaBase</li>
-                                    <li>MySql (Xampp)</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div className="Work-Section Card-Grid">
+                    <div className="Info-Card">
+                        <h2>Community I participate in: StellarPH   </h2>
+                        <img className="Card-Image" src="/StellarExp.jpg" alt="Stellarexp" />
+                        <img className="Card-Image" src="/StellarExp1.jpg" alt="Stellarexp" />
+                        <img className="Card-Image" src="/StellarExp2.jpg" alt="Stellarexp" />
+                      
                     </div>
-                    <div className="Skill-Section">
-                        <h1>Tools and AI</h1>
-                        <div className="Skill-Columns">
-                            <div className="Skill-Block">
-                                <ul>
-                                    <li>Visual Studio Code</li>
-                                    <li>Git</li>
-                                    <li>GitHub</li>
-                                    <li>ChatGPT</li>
-                                    <li>Gemini</li>
-                                    <li>Co Pilot</li>
-                                </ul>
-                            </div>
-                            <div className="Skill-Block">
-                                <p>Comfortable using modern workflows, version control, and AI assistance for faster development.</p>
-                            </div>
+                </div>
+
+                <div className="Text-Container" style={{position: 'relative', left: '0'}}>
+                    <div className="Skills-Grid">
+                        <div className="Skills-Column">
+                            <h1>Tech Stack Familliar With: </h1>
+                            <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <p></p>
+                                <li>C++</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>Php</li>
+                                <p></p>
+                                <li>SupaBase</li>
+                                <li>MySql (Xampp)</li>
+                            </ul>
+                        </div>
+                        <div className="Skills-Column">
+                            <h1>Tools and AI</h1>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <p></p>
+                                <li>ChatGPT</li>
+                                <li>Gemini</li>
+                                <li>Co Pilot</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div className="Icon-Slider">
-                    <div className="Icon-Track">
-                        <img className="Mini-Icon" src={Cplus} alt="C++" />
-                        <img className="Mini-Icon" src={Css} alt="CSS" />
-                        <img className="Mini-Icon" src={Html} alt="HTML" />
-                        <img className="Mini-Icon" src={Java} alt="Java" />
-                        <img className="Mini-Icon" src={JavaScript} alt="JavaScript" />
-                        <img className="Mini-Icon" src={Mysql} alt="MySQL" />
-                        <img className="Mini-Icon" src={Node} alt="Node.js" />
-                        <img className="Mini-Icon" src={Php} alt="Php" />
-                        <img className="Mini-Icon" src={Python} alt="Python" />
-                        <img className="Mini-Icon" src={React} alt="React" />
-                        <img className="Mini-Icon" src={Supabase} alt="Supabase" />
-                        <img className="Mini-Icon" src={Cplus} alt="C++" />
-                        <img className="Mini-Icon" src={Css} alt="CSS" />
-                        <img className="Mini-Icon" src={Html} alt="HTML" />
-                        <img className="Mini-Icon" src={Java} alt="Java" />
-                        <img className="Mini-Icon" src={JavaScript} alt="JavaScript" />
-                        <img className="Mini-Icon" src={Mysql} alt="MySQL" />
-                        <img className="Mini-Icon" src={Node} alt="Node.js" />
-                        <img className="Mini-Icon" src={Php} alt="Php" />
-                        <img className="Mini-Icon" src={Python} alt="Python" />
-                        <img className="Mini-Icon" src={React} alt="React" />
-                        <img className="Mini-Icon" src={Supabase} alt="Supabase" />
+                    <div className = "Icon-Slider">
+                        <div className ="Icon-Track">
+                            <img className="Mini-Icon" src={Cplus} alt="C++" />
+                            <img className="Mini-Icon" src={Css} alt="CSS" />
+                            <img className="Mini-Icon" src={Html} alt="HTML" />
+                            <img className="Mini-Icon" src={Java} alt="Java" />  
+                            <img className="Mini-Icon" src={JavaScript} alt="JavaScript" />
+                            <img className="Mini-Icon" src={Mysql} alt="MySQL" />
+                            <img className="Mini-Icon" src={Node} alt="Node.js" />  
+                            <img className="Mini-Icon" src={Php} alt="Php" />
+                            <img className="Mini-Icon" src={Python} alt="Python" />
+                            <img className="Mini-Icon" src={React} alt="React" />
+                            <img className="Mini-Icon" src={Supabase} alt="Supabase" />
+
+
+                            <img className="Mini-Icon" src={Cplus} alt="C++" />
+                            <img className="Mini-Icon" src={Css} alt="CSS" />
+                            <img className="Mini-Icon" src={Html} alt="HTML" />
+                            <img className="Mini-Icon" src={Java} alt="Java" />  
+                            <img className="Mini-Icon" src={JavaScript} alt="JavaScript" />
+                            <img className="Mini-Icon" src={Mysql} alt="MySQL" />
+                            <img className="Mini-Icon" src={Node} alt="Node.js" />  
+                            <img className="Mini-Icon" src={Php} alt="Php" />
+                            <img className="Mini-Icon" src={Python} alt="Python" />
+                            <img className="Mini-Icon" src={React} alt="React" />
+                            <img className="Mini-Icon" src={Supabase} alt="Supabase" />
+
+                        </div>
                     </div>
-                </div>
                 
             </section>
 
-           {/* Section 3: Projects */}
+  {/* Section 3: Projects */}
             <section id="projects" className="Section-Wrapper Project-Section">
                 <h1>My Projects</h1>
                 {/* Add your project cards here later */}
@@ -198,5 +199,6 @@ function Body() {
         </>
     );
 }
+
 
 export default Body;
