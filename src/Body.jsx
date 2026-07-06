@@ -53,7 +53,7 @@ function Body() {
                                 <span>Focus</span>
                                 <strong>Web Development</strong>
                             </div>
-                            <div className="Profile-Stat">
+                            <div className="Profile-Stat highlight">
                                 <span>Status</span>
                                 <strong>Open to internship roles</strong>
                             </div>

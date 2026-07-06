@@ -177,6 +177,22 @@ header {
     padding: 16px;
 }
 
+/* Highlighted status stat */
+.Profile-Stat.highlight {
+    text-align: left;
+    background: rgba(34, 77, 30, 0.18);
+    border: 1px solid rgba(124, 252, 124, 0.12);
+    transform: translateY(-2px);
+}
+
+.Profile-Stat.highlight span {
+    color: #c8ffd0;
+}
+
+.Profile-Stat.highlight strong {
+    color: #7CFC00;
+}
+
 .Profile-Stat span {
     display: block;
     font-size: 0.8rem;
