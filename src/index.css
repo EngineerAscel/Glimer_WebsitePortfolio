@@ -232,6 +232,40 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Gallery layout for multiple community images */
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    align-items: start;
+}
+
+.Gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.06);
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+.Gallery-Image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: rgba(0,0,0,0.06);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .Gallery-Image { height: 200px; }
+}
+
+@media (max-width: 600px) {
+    .Gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .Gallery-Image { height: 160px; }
+    .Text-Container { padding: 20px; }
+}
+
 .Card-Title {
     margin: 0 0 6px 0;
     color: #f3ebff;

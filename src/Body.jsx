@@ -101,11 +101,20 @@ function Body() {
             <section id="about" className="Section-Wrapper">
                 <div className="Work-Section Card-Grid">
                     <div className="Info-Card">
-                        <h2>Community I participate in: StellarPH   </h2>
-                        <img className="Card-Image" src="/StellarExp.jpg" alt="Stellarexp" />
-                        <img className="Card-Image" src="/StellarExp1.jpg" alt="Stellarexp" />
-                        <img className="Card-Image" src="/StellarExp2.jpg" alt="Stellarexp" />
-                      
+                        <h2>Community I participate in: StellarPH</h2>
+
+                        <div className="Gallery">
+                            <div className="Gallery-item">
+                                <img className="Gallery-Image" src="/StellarExp.jpg" alt="Stellarexp 1" />
+                            </div>
+                            <div className="Gallery-item">
+                                <img className="Gallery-Image" src="/StellarExp2.jpg" alt="Stellarexp 2" />
+                            </div>
+                            <div className="Gallery-item">
+                                <img className="Gallery-Image" src="/StellarExp1.jpg" alt="Stellarexp 3" />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
