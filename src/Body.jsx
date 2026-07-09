@@ -20,14 +20,20 @@ function Body() {
                     <div className="Home-container">
                        <h2>Welcome to my website</h2>
                           <p className = "Home-description">Ascel Ray D. Glimer / 20</p>
-                          <p className = "Home-description">3rd year Student of RTU</p>
+                          <p className = "Home-description">4th year Student of RTU</p>
                           <h2 className = "Home-description">Aspiring Software Engineer</h2>
                     </div>
 
                  <div>
-                    <button className="Home-Button">Download CV</button>
-
-                    </div>   
+                    <a
+                        href="/AscelRayGlimer_CV.pdf"
+                        download="AscelRayGlimer_CV.pdf"
+                        className="Home-Button"
+                        style={{ textDecoration: 'none', display: 'inline-block' }}
+                    >
+                        Download CV
+                    </a>
+                </div>
                     <img className="Main-Picture" src={profilePic} alt="Profile" />
                 </div>
             </section>
@@ -89,6 +95,7 @@ function Body() {
                                 <span className="Interest-Chip">Computer Hardware</span>
                                 <span className="Interest-Chip">Mobile Application</span>
                                 <span className="Interest-Chip">Technical Support</span>
+                                <span className="Interest-Chip">Networking</span>
                             </div>
                         </div>
                     </div>

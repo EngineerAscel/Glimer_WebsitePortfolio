@@ -408,7 +408,7 @@ header {
 .Main-Picture {
     display: block;
     width: min(520px, 100%);
-    height: auto;
+    height: 100%;
     max-height: 700px;
     margin-top: 0;
     object-fit: contain;
